@@ -31,27 +31,24 @@ mcp\_demo/
 ## 🛠️ Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/codemaker2015/mcp-server-experiments.git
-   cd mcp-server-experiments
-````
+    ```bash
+    git clone https://github.com/codemaker2015/mcp-server-experiments.git
+    cd mcp-server-experiments
+    ```
 
 2. Install uv
-    To install uv, run this in your terminal:
     ```bash
     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
     set Path=C:\Users\Codem\.local\bin;%Path%
     ```
 
-3. (Optional) Create a virtual environment:
-    Create and activate a virtual environment by executing the following command.
+3. Create a virtual environment.
     ```bash
     uv venv
     source .venv/bin/activate # for linux
     .venv\Scripts\activate    # for windows
     ```
 3. Install dependencies (if specified in `pyproject.toml` or requirements file):
-
    ```bash
    uv add -r requirements.txt
    ```
@@ -59,14 +56,12 @@ mcp\_demo/
 ## 🧪 Usage
 
 - Install MCP server to Claude Desktop:
-
     ```bash
     mcp install calculator.py
     mcp install sqlite_server.py
     ```
 
 - Directly test client-server simulations using MCP Inspector:
-
     ```bash
     mcp dev sqlite_server.py
     mcp dev calculator_client.py
